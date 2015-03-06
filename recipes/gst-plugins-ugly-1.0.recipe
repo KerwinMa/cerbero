@@ -20,7 +20,7 @@ class Recipe(recipe.Recipe):
     files_lang = ['gst-plugins-ugly-1.0']
 
     def prepare(self):
-        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/gstreamer', 'gst-plugins-ugly'))
+        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/git/gstreamer', 'gst-plugins-ugly'))
         self.remotes['upstream'] = self.remotes['origin']
 
         self.append_env['CFLAGS'] = " -Wno-error "

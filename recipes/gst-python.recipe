@@ -21,6 +21,6 @@ class Recipe(recipe.Recipe):
     ]
 
     def prepare(self):
-        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/gstreamer', 'gst-python'))
+        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/git/gstreamer', 'gst-python'))
         self.remotes['upstream'] = self.remotes['origin']
 

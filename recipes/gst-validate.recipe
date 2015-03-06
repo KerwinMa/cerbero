@@ -23,7 +23,7 @@ class Recipe(recipe.Recipe):
     files_gst_validate_plugins = ['lib/gstreamer-1.0/validate/libgstvalidatefaultinjection%(mext)s']
 
     def prepare(self):
-        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/gstreamer', 'gst-devtools'))
+        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/git/gstreamer', 'gst-devtools'))
         self.remotes['upstream'] = self.remotes['origin']
         if self.config.target_platform == Platform.LINUX:
             self.files_libs.extend(["libgstvalidate-preload-1.0",

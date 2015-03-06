@@ -104,5 +104,5 @@ class Recipe(custom.GStreamerStatic):
 
         super(Recipe, self).prepare()
 
-        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/gstreamer', 'gst-plugins-bad'))
+        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/git/gstreamer', 'gst-plugins-bad'))
         self.remotes['upstream'] = self.remotes['origin']

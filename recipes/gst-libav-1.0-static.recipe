@@ -41,7 +41,7 @@ class Recipe(custom.GStreamerStatic):
 
         super(Recipe, self).prepare()
 
-        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/gstreamer', 'gst-libav'))
+        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/git/gstreamer', 'gst-libav'))
         self.remotes['upstream'] = self.remotes['origin']
 
         for f in ['libavcodec', 'libavformat', 'libavutil', 'libavresample', 'libswscale']:

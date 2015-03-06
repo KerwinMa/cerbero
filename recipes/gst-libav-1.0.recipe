@@ -19,7 +19,7 @@ class Recipe(recipe.Recipe):
         self.append_env['CXXFLAGS'] = " -Wno-error "
         self.append_env['CPPFLAGS'] = " -Wno-error "
 
-        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/gstreamer', 'gst-libav'))
+        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/git/gstreamer', 'gst-libav'))
         self.remotes['upstream'] = self.remotes['origin']
 
         if self.config.target_platform != Platform.LINUX:

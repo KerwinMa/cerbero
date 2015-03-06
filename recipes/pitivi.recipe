@@ -5,7 +5,7 @@ class Recipe(recipe.Recipe):
     name = 'pitivi'
     version = '0.94'
     licenses = [License.GPLv2Plus]
-    remotes = {'origin': 'git://git.gnome.org/pitivi'}
+    remotes = {'origin': 'git://git.gnome.org/browse/pitivi'}
     config_sh = 'sh ./autogen.sh --noconfigure && ./configure'
     configure_options = "--disable-help"
     commit = 'origin/master'

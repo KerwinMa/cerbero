@@ -54,7 +54,7 @@ class Recipe(recipe.Recipe):
     }
 
     def prepare(self):
-        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/gstreamer', 'gst-plugins-good'))
+        self.remotes['origin'] = ('%s/%s' % ('git://anongit.freedesktop.org/git/gstreamer', 'gst-plugins-good'))
         self.remotes['upstream'] = self.remotes['origin']
 
         # The second detail is to work around use of deprecated NSOpenGLPFAFullScreen on OS X 10.10
